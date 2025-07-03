@@ -1,0 +1,22 @@
+{
+  "name": "com.yourcompany.yourpackage",
+  "version": "1.0.0",
+  "displayName": "Your Package Display Name",
+  "description": "Description of your custom Unity package",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "dependencies": {},
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://www.example.com"
+  }
+}
