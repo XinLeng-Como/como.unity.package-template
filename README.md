@@ -5,23 +5,40 @@ Unity package template repository
 This repository serves as a template for creating Unity custom packages. It follows Unity's official package structure guidelines and includes all necessary directories and files to get started with package development.
 
 ## Package Structure
+
+This template follows Unity's recommended package layout from the [official documentation](https://docs.unity3d.com/6000.1/Documentation/Manual/cus-layout.html):
+
 ```
-├── package.json                           # Package manifest
+├── package.json                                   # Package manifest
+├── CHANGELOG.md                                   # Version history
+├── LICENSE.md                                     # License information
+├── README.md                                      # Package overview
 ├── Runtime/
-│   ├── COMO.PackageTemplate.asmdef       # Assembly definition
+│   ├── COMO.PackageTemplate.asmdef               # Assembly definition
 │   ├── Scripts/
-│   │   └── SampleScript.cs               # Sample MonoBehaviour
-│   ├── Prefabs/                          # Unity prefabs
-│   ├── Assets/                           # Materials, textures, etc.
-│   └── Scenes/                           # Sample scenes
+│   │   └── SampleScript.cs                       # Sample MonoBehaviour
+│   ├── Prefabs/                                  # Unity prefabs
+│   ├── Assets/                                   # Materials, textures, etc.
+│   └── Scenes/                                   # Sample scenes
 ├── Editor/
-│   ├── COMO.PackageTemplate.Editor.asmdef # Editor assembly definition
-│   └── SampleEditor.cs                   # Custom inspector example
-└── Tests/
-    └── Runtime/
-        ├── COMO.PackageTemplate.Tests.asmdef # Test assembly definition
-        └── SampleRuntimeTests.cs         # Sample unit tests
+│   ├── COMO.PackageTemplate.Editor.asmdef       # Editor assembly definition
+│   └── SampleEditor.cs                           # Custom inspector example
+├── Tests/
+│   ├── Runtime/
+│   │   ├── COMO.PackageTemplate.Tests.asmdef     # Runtime test assembly
+│   │   └── SampleRuntimeTests.cs                 # Runtime unit tests
+│   └── Editor/
+│       ├── COMO.PackageTemplate.EditorTests.asmdef # Editor test assembly
+│       └── SampleEditorTests.cs                  # Editor unit tests
+├── Documentation~/
+│   └── index.md                                   # Package documentation
+└── Samples~/
+    └── BasicExample/
+        ├── README.md                              # Sample documentation
+        └── .gitkeep                               # Placeholder for sample content
 ```
+
+**Note**: Folders ending with `~` are excluded from Unity builds but available for development.
 
 ## Usage
 
