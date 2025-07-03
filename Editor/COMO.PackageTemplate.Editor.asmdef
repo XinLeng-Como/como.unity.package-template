@@ -1,0 +1,18 @@
+{
+    "name": "COMO.PackageTemplate.Editor",
+    "rootNamespace": "COMO.PackageTemplate.Editor",
+    "references": [
+        "COMO.PackageTemplate"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
