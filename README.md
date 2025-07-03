@@ -6,17 +6,21 @@ This repository serves as a template for creating Unity custom packages. It foll
 
 ## Package Structure
 ```
-├── package.json              # Package manifest
-├── Runtime/                  # Runtime scripts
-├── Editor/                   # Editor-only scripts
-├── Tests/
-│   ├── Runtime/             # Runtime tests
-│   └── Editor/              # Editor tests
-└── COMO/Packages/Template/
-    ├── Scripts/             # Additional scripts
-    ├── Prefabs/             # Unity prefabs
-    ├── Assets/              # General assets
-    └── Scene/               # Unity scenes
+├── package.json                           # Package manifest
+├── Runtime/
+│   ├── COMO.PackageTemplate.asmdef       # Assembly definition
+│   ├── Scripts/
+│   │   └── SampleScript.cs               # Sample MonoBehaviour
+│   ├── Prefabs/                          # Unity prefabs
+│   ├── Assets/                           # Materials, textures, etc.
+│   └── Scenes/                           # Sample scenes
+├── Editor/
+│   ├── COMO.PackageTemplate.Editor.asmdef # Editor assembly definition
+│   └── SampleEditor.cs                   # Custom inspector example
+└── Tests/
+    └── Runtime/
+        ├── COMO.PackageTemplate.Tests.asmdef # Test assembly definition
+        └── SampleRuntimeTests.cs         # Sample unit tests
 ```
 
 ## Usage
@@ -69,7 +73,7 @@ This template follows Unity's official custom package guidelines:
 - `Tests/Runtime/` and `Tests/Editor/` - Separated test environments
 
 ✅ **Package Naming Convention**:
-- Follows reverse domain notation: `com.yourcompany.yourpackage`
+- Follows reverse domain notation: `com.como.unity.package-template`
 - Ready for customization with your company/organization details
 
 ✅ **Git Repository Compatibility**:
